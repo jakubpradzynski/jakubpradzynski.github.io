@@ -236,7 +236,7 @@ section {
     justify-content: space-around;
 }
 
-.tech-icons>div>img {
+.tech-icons>div>img, svg {
     width: 50px;
 }
 
