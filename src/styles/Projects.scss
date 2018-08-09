@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+@mixin title {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: stretch;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .close {
+    flex-grow: 10;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .close-button {
+      $size: 25px;
+      height: $size;
+      width: $size;
+      position: relative;
+      box-sizing: border-box;
+      line-height: $size;
+      display: inline-block;
+
+      &:before, &:after {
+        $width: 25px;
+        $height: 5px;
+        transform: rotate(-45deg);
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: - $height / 2;
+        margin-left: - $width / 2;
+        display: block;
+        height: $height;
+        width: $width;
+        background-color: #fff;
+        transition: all 0.2s ease-out;
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        &:before, &:after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  .title {
+    flex-grow: 5;
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      @include title;
+
+      a {
+        text-decoration: none;
+        color: blue;
+        font-family: 'Do Hyeon', sans-serif;
+      }
+    }
+  }
+
+  .main {
+    flex-grow: 30;
+    overflow: auto;
+
+    .projectsList {
+      width: 100%;
+      overflow: auto;
+
+      .headers {
+        background-color: black;
+        color: blue;
+      }
+
+      td, th {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .row {
+        background-color: #777777;
+      }
+
+      .row:nth-child(even) {
+        background-color: #555555;
+      }
+
+      .row:hover {
+        background-color: #333333;
+        cursor: context-menu;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px), screen and (max-height: 600px) {
+  .projects {
+    font-size: 10px;
+  }
+}

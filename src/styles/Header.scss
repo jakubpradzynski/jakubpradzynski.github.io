@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+$text-background: url("../images/sea.jpeg");
+
+.Header {
+  flex-grow: 70;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+
+  h1 {
+    padding: 5% 1%;
+    font-size: 8rem;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    color: transparent;
+    background: $text-background repeat 40% 50%;
+    -webkit-background-clip: text;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 600px), screen and (max-height: 600px) {
+  .title {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}

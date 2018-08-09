@@ -1,0 +1,33 @@
+{
+  "homepage": "https://jakubpradzynski.github.io/",
+  "name": "kimiko",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@petejkim/react-scripts-ts-sass": "2.15.2",
+    "axios": "^0.18.0",
+    "env2": "^2.2.2",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^1.2.0",
+    "node-mailjet": "^3.2.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-pdf": "^3.0.5",
+    "react-pdf-reader": "^0.1.8"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "@types/node": "^10.5.3",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "typescript": "^2.9.2"
+  }
+}

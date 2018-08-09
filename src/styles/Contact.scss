@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+@mixin title {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .close {
+    flex-grow: 10;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .close-button {
+      $size: 25px;
+      height: $size;
+      width: $size;
+      position: relative;
+      box-sizing: border-box;
+      line-height: $size;
+      display: inline-block;
+
+      &:before, &:after {
+        $width: 25px;
+        $height: 5px;
+        transform: rotate(-45deg);
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: - $height / 2;
+        margin-left: - $width / 2;
+        display: block;
+        height: $height;
+        width: $width;
+        background-color: #fff;
+        transition: all 0.2s ease-out;
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        &:before, &:after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    flex-grow: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+      background-color: black;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      text-align: center;
+    }
+
+    .modal-close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .modal-close:hover,
+    .modal-close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    h3 {
+      @include title;
+      margin: 1% 0;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input.submit {
+      background-color: blue;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+      width: 70px;
+    }
+
+    input.submit:hover {
+      background-color: #0000c8;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #333333;
+      margin-top: 20px;
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .social-media {
+    flex-grow: 30;
+    width: 80%;
+    margin: auto;
+
+    h2 {
+      @include title;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    // Import Font
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+    // List of icons and colours
+    $icon-list: (
+            twitter "\f099" #32b9e7,
+            facebook "\f09a" #4b70ab,
+            googleplus "\f0d5" #fa5432,
+            linkedin "\f0e1" #0087be,
+            instagram "\f16d" #6291b2,
+            github "\f113" #333333,
+    );
+
+    // Each loop for creating the icon CSS
+    @each $icon, $unicode, $icon-background in $icon-list {
+
+      .icon--#{$icon} {
+        &::before {
+          content: $unicode;
+        }
+      }
+
+      .social__icon--#{$icon} {
+        background-color: $icon-background;
+
+        &:hover {
+          // Swap black for white to make the icons lighter on hover
+          background-color: mix(black, $icon-background, 15%);
+        }
+
+      }
+
+    }
+
+    // Display icons next to each other
+    .social__item {
+      display: inline-block;
+      margin: 1em;
+    }
+
+    // Basic icon style
+    .icon {
+      font-family: 'FontAwesome';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      // Better Font Rendering
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    // Extend icon to all other icons
+    [class^="icon--"] {
+      @extend .icon;
+    }
+
+    // Icon background
+    .social__icon {
+      font-size: 1.4em;
+      color: white;
+      text-decoration: none;
+      // Remove border radius to make icons square
+      border-radius:100%;
+      width: 2.2em;
+      height: 2.2em;
+      text-align: center;
+
+      // Vertical Centering
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // Extend social__icon to all other icons
+    [class^="social__icon"] {
+      @extend .social__icon;
+    }
+
+    // Add padding to icons container
+    .social__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1em;
+      font-size: 1.5em;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 600px), screen and (max-height: 600px) {
+  .contact {
+    font-size: 10px;
+    .close {
+      flex-grow: 1;
+    }
+    .contact-form {
+
+      .container {
+        width: 90%;
+      }
+    }
+  }
+}
