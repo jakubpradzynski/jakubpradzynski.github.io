@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: calc(100vw - (100vw - 100%));
+    background-image: repeating-linear-gradient(5rad ,#8b9da9, #fff6e4);
+    box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+}
+
+nav {
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    marign-bottom: 1em;
+    margin-right: 1em;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu a, button, a:hover, button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.main-text {
+    width: 100%;
+    height: 100%;
+}
+
+.main-text-title {
+    font-family: 'Lobster';
+    color: red;
+    font-size: 7em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 1);
+}
+
+.main-text-subtitle {
+    font-family: 'Ubuntu';
+    color: white;
+    font-size: 5em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 1);
+}
