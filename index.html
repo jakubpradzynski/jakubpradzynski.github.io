@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,9 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
     <!-- Material Design for Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/timeline.css">
@@ -20,349 +19,320 @@
     <link rel="stylesheet" href="styles/portfolio.css">
     <link rel="icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <title>Jakub Prądzyński</title>
 </head>
+
 <body onload="loader()">
-<div id="loader"></div>
-<div id="all" class="animate-bottom">
-    <!-- Menu -->
-    <nav>
-        <div class="btn-group">
-            <button class="btn bmd-btn-fab dropdown-toggle menu" type="button" id="ex4" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+    <div id="loader"></div>
+    <div id="all" class="animate-bottom">
+        <!-- Menu -->
+        <nav>
+            <div class="btn-group">
+                <button class="btn bmd-btn-fab dropdown-toggle menu" type="button" id="ex4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="material-icons">more_vert</i>
             </button>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="ex4">
-                <a href="#main">
-                    <button class="dropdown-item" type="button">Main</button>
-                </a>
-                <a href="#about-me">
-                    <button class="dropdown-item" type="button">About me</button>
-                </a>
-                <a href="#career">
-                    <button class="dropdown-item" type="button">Career</button>
-                </a>
-                <a href="#techs">
-                    <button class="dropdown-item" type="button">Techs</button>
-                </a>
-                <a href="#portfolio">
-                    <button class="dropdown-item" type="button">Portfolio</button>
-                </a>
+                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="ex4">
+                    <a href="#main">
+                        <button class="dropdown-item" type="button">Main</button>
+                    </a>
+                    <a href="#about-me">
+                        <button class="dropdown-item" type="button">About me</button>
+                    </a>
+                    <a href="#career">
+                        <button class="dropdown-item" type="button">Career</button>
+                    </a>
+                    <a href="#techs">
+                        <button class="dropdown-item" type="button">Techs</button>
+                    </a>
+                    <a href="#portfolio">
+                        <button class="dropdown-item" type="button">Portfolio</button>
+                    </a>
+                </div>
             </div>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="main-container container-fluid d-flex justify-content-center flex-column align-items-center">
+            <p class="text-center main-text-title">Jakub Prądzyński</p>
+            <p class="text-center main-text-subtitle">Junior Software Engineer</p>
         </div>
-    </nav>
 
-    <!-- Main -->
-    <div id="main"
-         class="main-container container-fluid d-flex justify-content-center flex-column align-items-center">
-        <p class="text-center main-text-title">Jakub Prądzyński</p>
-        <p class="text-center main-text-subtitle">Junior Java Developer</p>
-    </div>
-
-    <!-- About me -->
-    <div id="about-me"
-         class="about-me-container container-fluid d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-center header">About me</h1><br><br>
-        <div class="wrapper">
-            <div class="profile-container">
-                <div class="profile">
-                    <div class="meta">
-                        <img src="images/me-small.jpg" class="avatar"/>
-                        <h2>Jakub<br>Prądzyński</h2>
-                        <a class="fa" href="mailto:jakub.pradzynski@gmail.com" target="new"><i
+        <!-- About me -->
+        <div id="about-me" class="about-me-container container-fluid d-flex justify-content-center flex-column align-items-center">
+            <h1 class="text-center header">About me</h1><br><br>
+            <div class="wrapper">
+                <div class="profile-container">
+                    <div class="profile">
+                        <div class="meta">
+                            <img src="images/me-small.jpg" class="avatar" />
+                            <h2>Jakub<br>Prądzyński</h2>
+                            <a class="fa" href="mailto:jakub.pradzynski@gmail.com" target="new"><i
                                 class="fas fa-envelope fa-2x"></i></a>
-                        <a href="http://jakubpradzynski.github.io">
-                            <div class="position">jakubpradzynski.github.io</div>
-                        </a>
-                        <div class="social">
-                            <a class="fa" href="https://www.linkedin.com/in/jakubpradzynski/" target="new"><i
+                            <a href="http://jakubpradzynski.github.io">
+                                <div class="position">jakubpradzynski.github.io</div>
+                            </a>
+                            <div class="social">
+                                <a class="fa" href="https://www.linkedin.com/in/jakubpradzynski/" target="new"><i
                                     class="fab fa-linkedin-in fa-2x"></i></a>
-                            <a class="fa" href="https://github.com/jakubpradzynski/" target="new"><i
+                                <a class="fa" href="https://github.com/jakubpradzynski/" target="new"><i
                                     class="fab fa-github fa-2x"></i></a><br><br>
-                            <a class="fa" target="new" href="https://www.facebook.com/jakub.pradzynski"><i
+                                <a class="fa" target="new" href="https://www.facebook.com/jakub.pradzynski"><i
                                     class="fab fa-facebook-f fa-2x"></i></a>
-                            <a class="fa" href="https://twitter.com/PradzynskiJakub" target="new"><i
+                                <a class="fa" href="https://twitter.com/PradzynskiJakub" target="new"><i
                                     class="fab fa-twitter fa-2x"></i></a>
+                            </div>
                         </div>
+                        <div class="overlay"></div>
                     </div>
-                    <div class="overlay"></div>
-                </div>
-                <div class="profile-description">
-                    <h1>Welcome on my website!</h1>
-                    <p>I am currently a student of computer science at the Nicolaus Copernicus University in Toruń.<br>
-                        I devote the majority of my time to learn programming. If you want to know what my career in IT
-                        looks like, I invite you below.<br>
-                        My hobby is practicing different types of sport. I have been training K1 (kickboxing) for a few
-                        years, and now I am trying to improve in terms of calisthenics and judo. In addition, I like to
-                        read
-                        books.<br>
-                        My favorites are:<br>
-                        <i>The Witcher - A. Sapkowski</i>,<br>
-                        <i>Godfather - M. Puzo</i>,<br>
-                        <i>Sniper. Command Team Seal story - H. E. Wasdin, S. Templin</i>.</p>
-                    <a href="https://drive.google.com/open?id=1iY59cQWxZezxGP8U4bN1LRb5rrCJVMJd">My CV</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Career timeline -->
-    <div id="career"
-         class="timeline-container container-fluid d-flex justify-content-center flex-column align-items-center">
-        <div class="main">
-            <section id="timeline" class="timeline-outer">
-                <div class="container" id="content">
-                    <div class="row">
-                        <div class="col s12 m12 l12">
-                            <h1 class="text-center header">Career Timeline</h1>
-                            <ul class="timeline">
-                                <li class="event">
-                                    <p class="timeline-date">03/2019 - Present</p>
-                                    <h3 class="timeline-name">NMG S.A. - Junior Java Developer</h3>
-                                    <p>To be continued...</p>
-                                    <a class="timeline-link" href="http://www.nmg.pl">nmg.pl</a>
-                                </li>
-                                <li class="event">
-                                    <p class="timeline-date">10/2018 - 02/2019</p>
-                                    <h3 class="timeline-name">eCom.software - Junior Java Developer</h3>
-                                    <p>Work after internship.</p>
-                                    <a class="timeline-link" href="http://www.ecom.software">ecom.software</a>
-                                </li>
-                                <li class="event">
-                                    <p class="timeline-date">07/2018 - 09/2018</p>
-                                    <h3 class="timeline-name">eCom.software - internship in Java/DevOps team)</h3>
-                                    <p>I work on a web application written in Java, based on the microservices
-                                        architecture and the Event Sourcing, operating in the Azure cloud and using
-                                        Docker.</p>
-                                    <a class="timeline-link" href="http://www.ecom.software">ecom.software</a>
-                                </li>
-                                <li class="event">
-                                    <p class="timeline-date">02/2018 - 04/2018</p>
-                                    <h3 class="timeline-name">Allegro - two-month Tech e-Xperience internship</h3>
-                                    <p>Technology area, Merchant Support team, Web Developer position. During
-                                        the internship I had the opportunity to help in tasks related to quantity
-                                        rebates
-                                        and offer sets. Technologies that I've encountered are: Java, Spring Boot,
-                                        Kotlin, Groovy, Angular / React.</p>
-                                    <a class="timeline-link" href="http://www.allegro.pl">allegro.pl</a>
-                                </li>
-                                <li class="event">
-                                    <p class="timeline-date">10/2016 - Present</p>
-                                    <h3 class="timeline-name">Nicolaus Copernicus University in Toruń</h3>
-                                    <p>Faculty of Mathematics and Computer Science.<br>
-                                        Field of study: Computer Science</p>
-                                    <a class="timeline-link" href="http://www.umk.pl">umk.pl</a>
-                                </li>
-                                <li class="event">
-                                    <p class="timeline-date">09/2013 - 05/2016</p>
-                                    <h3 class="timeline-name">Anna Wazówna High School in Golub-Dobrzyń</h3>
-                                    <p>profile: Math-Physic</p>
-                                    <a class="timeline-link" href="http://www.wazowna.pl">wazowna.pl</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="profile-description">
+                        <h1>Welcome on my website!</h1>
+                        <p>I am currently a Junior Software Engineer at Allegro.pl and student of IT in Business at WSB in Toruń.<br> I devote the majority of my time to learn programming. If you want to know what my career in IT looks like, I invite you
+                            below.
+                            <br> My hobby is practicing different types of sport. I have been training K1 (kickboxing) for a few years, and now I am trying to improve in terms of calisthenics and judo. In addition, I like to read books.
+                            <br> My favorites are:<br>
+                            <i>The Witcher - A. Sapkowski</i>,<br>
+                            <i>Godfather - M. Puzo</i>,<br>
+                            <i>Sniper. Command Team Seal story - H. E. Wasdin, S. Templin</i>.</p>
+                        <a href="https://drive.google.com/open?id=1iY59cQWxZezxGP8U4bN1LRb5rrCJVMJd">My CV</a>
                     </div>
                 </div>
-            </section>
-        </div>
-    </div>
-
-    <!-- Techs -->
-    <div id="techs"
-         class="skills-container container-fluid d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-center header">What do I use / do most often?</h1><br><br>
-        <dl class="skills-diagram">
-            <dt class="skill-5">ML</dt>
-            <dd>5</dd>
-            <dt class="skill-10">Java</dt>
-            <dd>10</dd>
-            <dt class="skill-3">JS</dt>
-            <dd>3</dd>
-            <dt class="skill-8">Kotlin</dt>
-            <dd>8</dd>
-            <dt class="skill-6">CSS</dt>
-            <dd>6</dd>
-            <dt class="skill-7">HTML</dt>
-            <dd>7</dd>
-            <dt class="skill-9">Spring Boot</dt>
-            <dd>9</dd>
-        </dl>
-    </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio"
-         class="portfolio-container container-fluid ">
-        <h1 class="text-center header">Portfolio</h1>
-        <div class="cards">
-            <div class="blog-card">
-                <div class="meta">
-                    <div class="photo"
-                         style="background-image: url('images/lock-management.jpg')"></div>
-                    <ul class="details">
-                        <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
-                        <li class="date">Current</li>
-                        <li class="tags">
-                            <ul>
-                                <li><a href="https://torun-apartamenty.pl/">torun-apartamenty.pl</a></li>
-                            </ul>
-                        </li>
-                        <li class="techs">
-                            <ul>
-                                <li>Kotlin,</li>
-                                <li>Spring Boot,</li>
-                                <li>Hibernate,</li>
-                                <li>Thymeleaf</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="description">
-                    <h1>Lock management</h1>
-                    <h2>Remote adding codes to locks</h2>
-                    <p>Project, on a contract for a specific work, consisting in the automation of
-                        adding codes from the reservation management service to remote controlled door locks.
-                    </p>
-                    <p class="read-more">
-                        <a href="https://torun-apartamenty.pl/">Check</a>
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card alt">
-                <div class="meta">
-                    <div class="photo"
-                         style="background-image: url('images/team8.jpg')"></div>
-                    <ul class="details">
-                        <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
-                        <li class="date">Current</li>
-                        <li class="tags">
-                            <ul>
-                                <li><a href="https://aleks-2.mat.umk.pl/pz2018/zesp08/">Project</a></li>
-                                <li><a href="https://mat.umk.pl">WMiI</a></li>
-                            </ul>
-                        </li>
-                        <li class="techs">
-                            <ul>
-                                <li>Kotlin,</li>
-                                <li>Spring Boot,</li>
-                                <li>Hibernate</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="description">
-                    <h1>Team programming</h1>
-                    <h2>Routes on maps for public events</h2>
-                    <p>Mobile application that allows you to
-                        search for public events for which a route will be displayed (on the Google map) containing all
-                        the places where you will find attractions of this event.</p>
-                    <p class="read-more">
-                        <a href="https://aleks-2.mat.umk.pl/pz2018/zesp08/">Read More</a>
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="meta">
-                    <div class="photo"
-                         style="background-image: url('images/crispus.jpg')"></div>
-                    <ul class="details">
-                        <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
-                        <li class="date">Jun. 13, 2018</li>
-                        <li class="tags">
-                            <ul>
-                                <li><a href="https://github.com/jakubpradzynski/crispus">GitHub</a></li>
-                                <li><a href="https://mat.umk.pl">WMiI</a></li>
-                            </ul>
-                        </li>
-                        <li class="techs">
-                            <ul>
-                                <li>Java,</li>
-                                <li>Spring Boot,</li>
-                                <li>Thymeleaf</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="description">
-                    <h1>Crispus</h1>
-                    <h2>Control the household budget</h2>
-                    <p>Completion project for the lecture on Programming III in Java.
-                        The application is used to calculate expenses and revenues and to control the household budget.
-                    </p>
-                    <p class="read-more">
-                        <a href="https://github.com/jakubpradzynski/crispus#readme">Read More</a>
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card alt">
-                <div class="meta">
-                    <div class="photo"
-                         style="background-image: url('images/azariah.jpg')"></div>
-                    <ul class="details">
-                        <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
-                        <li class="date">Sep. 11, 2018</li>
-                        <li class="tags">
-                            <ul>
-                                <li><a href="https://github.com/jakubpradzynski/azariah">GitHub</a></li>
-                                <li><a href="https://mat.umk.pl">WMiI</a></li>
-                            </ul>
-                        </li>
-                        <li class="techs">
-                            <ul>
-                                <li>C++,</li>
-                                <li>Qt</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="description">
-                    <h1>Azariah</h1>
-                    <h2>Displaying 3D object from STL</h2>
-                    <p>Final project for university classes "Laboratory of Graphics and Multimedia"
-                        Application displaying a 3D object read from binary STL file.</p>
-                    <p class="read-more">
-                        <a href="https://github.com/jakubpradzynski/azariah#readme">Read More</a>
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
             </div>
         </div>
+
+        <!-- Career timeline -->
+        <div id="career" class="timeline-container container-fluid d-flex justify-content-center flex-column align-items-center">
+            <div class="main">
+                <section id="timeline" class="timeline-outer">
+                    <div class="container" id="content">
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <h1 class="text-center header">Career Timeline</h1>
+                                <ul class="timeline">
+                                    <li class="event">
+                                        <p class="timeline-date">03/2019 - Present</p>
+                                        <h3 class="timeline-name">Allegro.pl Sp. z o.o. - Junior Software Engineer</h3>
+                                        <p>To be continued...</p>
+                                        <a class="timeline-link" href="http://www.allegro.pl">allegro.pl</a>
+                                    </li>
+                                    <li class="event">
+                                        <p class="timeline-date">10/2018 - 02/2019</p>
+                                        <h3 class="timeline-name">eCom.software - Junior Java Developer</h3>
+                                        <p>Work after internship.</p>
+                                        <a class="timeline-link" href="http://www.ecom.software">ecom.software</a>
+                                    </li>
+                                    <li class="event">
+                                        <p class="timeline-date">07/2018 - 09/2018</p>
+                                        <h3 class="timeline-name">eCom.software - internship in Java/DevOps team)</h3>
+                                        <p>I work on a web application written in Java, based on the microservices architecture and the Event Sourcing, operating in the Azure cloud and using Docker.
+                                        </p>
+                                        <a class="timeline-link" href="http://www.ecom.software">ecom.software</a>
+                                    </li>
+                                    <li class="event">
+                                        <p class="timeline-date">02/2018 - 04/2018</p>
+                                        <h3 class="timeline-name">Allegro - two-month Tech e-Xperience internship</h3>
+                                        <p>Technology area, Merchant Support team, Web Developer position. During the internship I had the opportunity to help in tasks related to quantity rebates and offer sets. Technologies that I've encountered are: Java,
+                                            Spring Boot, Kotlin, Groovy, Angular / React.</p>
+                                        <a class="timeline-link" href="http://www.allegro.pl">allegro.pl</a>
+                                    </li>
+                                    <li class="event">
+                                        <p class="timeline-date">10/2016 - Present</p>
+                                        <h3 class="timeline-name">Nicolaus Copernicus University in Toruń</h3>
+                                        <p>Faculty of Mathematics and Computer Science.<br> Field of study: Computer Science</p>
+                                        <a class="timeline-link" href="http://www.umk.pl">umk.pl</a>
+                                    </li>
+                                    <li class="event">
+                                        <p class="timeline-date">09/2013 - 05/2016</p>
+                                        <h3 class="timeline-name">Anna Wazówna High School in Golub-Dobrzyń</h3>
+                                        <p>profile: Math-Physic</p>
+                                        <a class="timeline-link" href="http://www.wazowna.pl">wazowna.pl</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Techs -->
+        <div id="techs" class="skills-container container-fluid d-flex justify-content-center flex-column align-items-center">
+            <h1 class="text-center header">What do I use / do most often?</h1><br><br>
+            <dl class="skills-diagram">
+                <dt class="skill-5">ML</dt>
+                <dd>5</dd>
+                <dt class="skill-10">Java</dt>
+                <dd>10</dd>
+                <dt class="skill-3">JS</dt>
+                <dd>3</dd>
+                <dt class="skill-8">Kotlin</dt>
+                <dd>8</dd>
+                <dt class="skill-6">CSS</dt>
+                <dd>6</dd>
+                <dt class="skill-7">HTML</dt>
+                <dd>7</dd>
+                <dt class="skill-9">Spring Boot</dt>
+                <dd>9</dd>
+            </dl>
+        </div>
+
+        <!-- Portfolio -->
+        <div id="portfolio" class="portfolio-container container-fluid ">
+            <h1 class="text-center header">Portfolio</h1>
+            <div class="cards">
+                <div class="blog-card">
+                    <div class="meta">
+                        <div class="photo" style="background-image: url('images/lock-management.jpg')"></div>
+                        <ul class="details">
+                            <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
+                            <li class="date">Current</li>
+                            <li class="tags">
+                                <ul>
+                                    <li><a href="https://torun-apartamenty.pl/">torun-apartamenty.pl</a></li>
+                                </ul>
+                            </li>
+                            <li class="techs">
+                                <ul>
+                                    <li>Kotlin,</li>
+                                    <li>Spring Boot,</li>
+                                    <li>Hibernate,</li>
+                                    <li>Thymeleaf</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1>Lock management</h1>
+                        <h2>Remote adding codes to locks</h2>
+                        <p>Project, on a contract for a specific work, consisting in the automation of adding codes from the reservation management service to remote controlled door locks.
+                        </p>
+                        <p class="read-more">
+                            <a href="https://torun-apartamenty.pl/">Check</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card alt">
+                    <div class="meta">
+                        <div class="photo" style="background-image: url('images/team8.jpg')"></div>
+                        <ul class="details">
+                            <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
+                            <li class="date">Current</li>
+                            <li class="tags">
+                                <ul>
+                                    <li><a href="https://aleks-2.mat.umk.pl/pz2018/zesp08/">Project</a></li>
+                                    <li><a href="https://mat.umk.pl">WMiI</a></li>
+                                </ul>
+                            </li>
+                            <li class="techs">
+                                <ul>
+                                    <li>Kotlin,</li>
+                                    <li>Spring Boot,</li>
+                                    <li>Hibernate</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1>Team programming</h1>
+                        <h2>Routes on maps for public events</h2>
+                        <p>Mobile application that allows you to search for public events for which a route will be displayed (on the Google map) containing all the places where you will find attractions of this event.</p>
+                        <p class="read-more">
+                            <a href="https://aleks-2.mat.umk.pl/pz2018/zesp08/">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="meta">
+                        <div class="photo" style="background-image: url('images/crispus.jpg')"></div>
+                        <ul class="details">
+                            <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
+                            <li class="date">Jun. 13, 2018</li>
+                            <li class="tags">
+                                <ul>
+                                    <li><a href="https://github.com/jakubpradzynski/crispus">GitHub</a></li>
+                                    <li><a href="https://mat.umk.pl">WMiI</a></li>
+                                </ul>
+                            </li>
+                            <li class="techs">
+                                <ul>
+                                    <li>Java,</li>
+                                    <li>Spring Boot,</li>
+                                    <li>Thymeleaf</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1>Crispus</h1>
+                        <h2>Control the household budget</h2>
+                        <p>Completion project for the lecture on Programming III in Java. The application is used to calculate expenses and revenues and to control the household budget.
+                        </p>
+                        <p class="read-more">
+                            <a href="https://github.com/jakubpradzynski/crispus#readme">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card alt">
+                    <div class="meta">
+                        <div class="photo" style="background-image: url('images/azariah.jpg')"></div>
+                        <ul class="details">
+                            <li class="author"><a href="https://github.com/jakubpradzynski/">Jakub Prądzyński</a></li>
+                            <li class="date">Sep. 11, 2018</li>
+                            <li class="tags">
+                                <ul>
+                                    <li><a href="https://github.com/jakubpradzynski/azariah">GitHub</a></li>
+                                    <li><a href="https://mat.umk.pl">WMiI</a></li>
+                                </ul>
+                            </li>
+                            <li class="techs">
+                                <ul>
+                                    <li>C++,</li>
+                                    <li>Qt</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1>Azariah</h1>
+                        <h2>Displaying 3D object from STL</h2>
+                        <p>Final project for university classes "Laboratory of Graphics and Multimedia" Application displaying a 3D object read from binary STL file.</p>
+                        <p class="read-more">
+                            <a href="https://github.com/jakubpradzynski/azariah#readme">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-        crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-        crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function () {
-        $('body').bootstrapMaterialDesign();
-        setTimeout(function () {
-            $('.profile-container').addClass('fadeIn');
-        }, 300);
-    });
-</script>
-<script>
-    var myVar;
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').bootstrapMaterialDesign();
+            setTimeout(function() {
+                $('.profile-container').addClass('fadeIn');
+            }, 300);
+        });
+    </script>
+    <script>
+        var myVar;
 
-    function loader() {
-        myVar = setTimeout(showPage, 2000);
-    }
+        function loader() {
+            myVar = setTimeout(showPage, 2000);
+        }
 
-    function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("all").style.display = "block";
-    }
-</script>
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("all").style.display = "block";
+        }
+    </script>
 </body>
+
 </html>
