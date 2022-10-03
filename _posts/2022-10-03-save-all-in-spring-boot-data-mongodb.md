@@ -210,9 +210,13 @@ Of course both tests passed, because we only checked count of saved objects.
 
 But look at the execution times...
 
-**Saving books without id took 560ms and with id 17 sec 197 ms.**
+----
 
-**That's about 30 times more!**
+**🚨 Saving books without id took 560ms and with id 17 sec 197 ms. 🚨**
+
+**🚨 That's about 30 times more! 🚨**
+
+----
 
 This is a really significant difference, especially in online systems.
 
