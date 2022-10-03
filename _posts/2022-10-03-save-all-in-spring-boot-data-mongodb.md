@@ -25,7 +25,7 @@ Are such auto-generated methods are flawless? No! And I will show you why on spe
 
 # Example MongoDB repository
 
-### What is `MongoRepository`?
+## What is `MongoRepository`?
 
 In `spring-boot-data-mongodb` project we can find additional `Repository` interface named
 [MongoRepository](https://docs.spring.io/spring-data/mongodb/docs/current/api/org/springframework/data/mongodb/repository/MongoRepository.html)
@@ -34,7 +34,7 @@ It is special interface for MongoDB with base implementation
 [SimpleMongoRepository](https://docs.spring.io/spring-data/mongodb/docs/current/api/org/springframework/data/mongodb/repository/support/SimpleMongoRepository.html)
 .
 
-### Example collection
+## Example collection
 
 Let's assume we have project which stores books. Such project will store objects in MongoDB collection `books`.
 Class definition for books will look like:
@@ -57,7 +57,7 @@ We have methods like `save`, `find`, `delete`, `count` out of the box. Isn't tha
 
 # Problem with `saveAll` method in `SimpleMongoRepository`
 
-### `id` is essential!
+## `id` is essential!
 
 Let's look at such two tests:
 
@@ -122,7 +122,7 @@ And test without ids generates only one query into database (`insert`):
 
 Why is that?
 
-### `saveAll` exposed.
+## `saveAll` exposed.
 
 ```java
   /*
@@ -166,7 +166,7 @@ or [save](https://www.mongodb.com/docs/v4.4/reference/method/db.collection.save/
 That's why `saveAll` method in `MongoRepository` has such logic.
 It covers something that we may want to use in our service but it is not available in MongoDB itself.
 
-### How does it affect performance?
+## How does it affect performance?
 
 Let's create two more tests to see how it affects performance.
 Similar as above, we will create tests with and without ids, but this time we will save 10,000 books.
@@ -216,7 +216,7 @@ But look at the execution times...
 
 This is a really significant difference, especially in online systems.
 
-### Example case when this can cause a problem
+## Example case when this can cause a problem
 
 Suppose you are creating a service that imports flat files (csv, xlsx) into the database.
 The application receives the file, has to read all the lines, map the data and save it in the database.
