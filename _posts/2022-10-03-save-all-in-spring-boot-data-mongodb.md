@@ -1,5 +1,5 @@
 ---
-title: Be careful with `saveAll` method in `spring-boot-data-mongodb`!
+title: Be careful with **saveAll** method in **spring-boot-data-mongodb**!
 author: jakubpradzynski
 date: 2022-10-03 22:00:00 +0800
 categories: [IT, MongoDB]
@@ -62,7 +62,7 @@ We have methods like `save`, `find`, `delete`, `count` out of the box. Isn't tha
 Let's look at such two tests:
 
 ```kotlin
-    @Test
+@Test
 fun shouldSaveBooks_WithoutId() {
   // GIVEN
   val books = listOf(
@@ -79,7 +79,7 @@ fun shouldSaveBooks_WithoutId() {
 ```
 
 ```kotlin
-    @Test
+@Test
 fun shouldSaveBooks_WithId() {
   // GIVEN
   val books = listOf(
@@ -125,7 +125,7 @@ Why is that?
 ## `saveAll` exposed.
 
 ```java
-  /*
+ /*
  * (non-Javadoc)
  * @see org.springframework.data.mongodb.repository.MongoRepository#saveAll(java.lang.Iterable)
  */
@@ -138,13 +138,12 @@ public<S extends T> List<S> saveAll(Iterable<S> entities){
   boolean allNew=source.stream().allMatch(entityInformation::isNew);
 
   if(allNew){
-
-  List<S> result=source.stream().collect(Collectors.toList());
-  return new ArrayList<>(mongoOperations.insert(result,entityInformation.getCollectionName()));
+    List<S> result=source.stream().collect(Collectors.toList());
+    return new ArrayList<>(mongoOperations.insert(result,entityInformation.getCollectionName()));
   }
 
   return source.stream().map(this::save).collect(Collectors.toList());
-  }
+}
 ```
 
 This is body of the `saveAll` method from `SimpleMongoRepository`.
