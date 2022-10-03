@@ -1,5 +1,5 @@
 ---
-title: Be careful with **saveAll** method in **spring-boot-data-mongodb**!
+title: Be careful with saveAll method in spring-boot-data-mongodb!
 author: jakubpradzynski
 date: 2022-10-03 22:00:00 +0800
 categories: [IT, MongoDB]
