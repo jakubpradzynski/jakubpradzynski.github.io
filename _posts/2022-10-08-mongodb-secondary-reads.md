@@ -1,7 +1,7 @@
 ---
 title: How to easily optimize replica set resource consumption & performance in MongoDB?
 author: jakubpradzynski
-date: 2022-10-03 22:00:00 +0800
+date: 2022-10-08 10:00:00 +0800
 categories: [IT, MongoDB]
 tags: [it, mongodb, replica set, optimization, read preference]
 pin: false
