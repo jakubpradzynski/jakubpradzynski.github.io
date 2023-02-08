@@ -3,7 +3,7 @@ title: Do you write scripts? Consider using Spring Shell for it!
 author: jakubpradzynski
 date: 2023-02-08 15:00:00 +0800
 categories: [IT, Spring]
-tags: [it, spring shell, kotlin]
+tags: [it, spring shell]
 pin: false
 toc: true
 ---
