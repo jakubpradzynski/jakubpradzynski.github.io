@@ -100,12 +100,12 @@ The only difference is that in the second one we fill the `id` field before savi
 
 Let's look at the results of this tests.
 
-![](../assets/img/save_all_in_spring_boot_data_mongodb/test_results_single.png)
+![](/assets/img/save_all_in_spring_boot_data_mongodb/test_results_single.png)
 
 Test in which we fill the ids passed. That because we compared whole objects.
 When we leave ids as `null` MongoDB will set them itself. You can see it when we look at the assertion which failed.
 
-![](../assets/img/save_all_in_spring_boot_data_mongodb/without_id_error.png)
+![](/assets/img/save_all_in_spring_boot_data_mongodb/without_id_error.png)
 
 It's clear. Each document needs an ID so MongoDB set it when necessary (more details about `_id`
 field [here](https://www.mongodb.com/docs/manual/core/document/#the-_id-field)).
@@ -115,10 +115,10 @@ To see this we have to enable `DEBUG` logging on `MongoTemplate`
 (add `logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG` in `application.properties`).
 
 Test in which we set ids ourselves generates two queries into database (`saves`):
-![](../assets/img/save_all_in_spring_boot_data_mongodb/with_id_log.png)
+![](/assets/img/save_all_in_spring_boot_data_mongodb/with_id_log.png)
 
 And test without ids generates only one query into database (`insert`):
-![](../assets/img/save_all_in_spring_boot_data_mongodb/without_id_log.png)
+![](/assets/img/save_all_in_spring_boot_data_mongodb/without_id_log.png)
 
 Why is that?
 
@@ -203,7 +203,7 @@ fun shouldSaveTenThousandOfBooks_WithId() {
 
 What are the test results?
 
-![](../assets/img/save_all_in_spring_boot_data_mongodb/test_results_many.png)
+![](/assets/img/save_all_in_spring_boot_data_mongodb/test_results_many.png)
 
 Of course both tests passed, because we only checked count of saved objects.
 

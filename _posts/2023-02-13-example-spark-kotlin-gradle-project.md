@@ -33,7 +33,7 @@ Selected:
 - JVM: 17
 - Gradle DSL: Kotlin
 
-![](../assets/img/example_kotlin_gradle_idea_project.png)
+![](/assets/img/example_kotlin_gradle_idea_project.png)
 
 ## Dependencies
 

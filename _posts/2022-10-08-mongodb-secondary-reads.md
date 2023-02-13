@@ -13,7 +13,7 @@ toc: true
 I created new [free MongoDB cluster on Atlas](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/)
 and [loaded sample data](https://www.mongodb.com/docs/atlas/sample-data/) into this cluster.
 
-![](../assets/img/mongodb_secondary_reads/free_atlas_cluster.png)
+![](/assets/img/mongodb_secondary_reads/free_atlas_cluster.png)
 
 As you can see cluster:
 
@@ -78,7 +78,7 @@ for (let i = 0; i < 1_000; i++) {
 ```
 
 After running it, metrics look like:
-![](../assets/img/mongodb_secondary_reads/only_primary_reads.png)
+![](/assets/img/mongodb_secondary_reads/only_primary_reads.png)
 
 So, all reads were made from `primary` node (it is marked by letter *P* above chart).
 
@@ -87,7 +87,7 @@ So, all reads were made from `primary` node (it is marked by letter *P* above ch
 When I simply modify script (only but adding `?readPreference=secondary` at the end of the `mongo_uri`) and run it again,
 I can see difference on the charts:
 
-![](../assets/img/mongodb_secondary_reads/secondary_reads.png)
+![](/assets/img/mongodb_secondary_reads/secondary_reads.png)
 
 Read operations were made from `secondary` nodes, so now the whole read traffic to database is split to two secondaries.
 Now primary will be responsible only for write operations. It should have significant impact on resource consumption and database performance.
