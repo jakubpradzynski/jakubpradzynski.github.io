@@ -2,7 +2,7 @@
 title: Do you write scripts? Consider using Spring Shell for it!
 author: jakubpradzynski
 date: 2023-02-08 15:00:00 +0800
-categories: [IT, Spring]
+categories: [IT, Spring Framework]
 tags: [it, spring shell]
 pin: false
 toc: true
@@ -29,7 +29,7 @@ When you collect many scripts that help you work daily, you can have opened shel
 
 # Pros of using [Spring Shell](https://docs.spring.io/spring-shell/docs/3.0.0/docs/index.html#what-is-spring-shell)
 
-### The same technology stack as in everyday work
+## The same technology stack as in everyday work
 
 If you work with:
 
@@ -42,7 +42,7 @@ For example, you can use Spring Data to connect to a database.
 You have access to everything that Spring offers. Also, you can generate new Spring Shell projects just by
 using [start.spring.io](https://start.spring.io).
 
-### Testing scripts or even TDD
+## Testing scripts or even TDD
 
 How often do you write tests for your scripts? I thought so.
 
@@ -50,21 +50,21 @@ When you use generated Spring Shell project, you have prepared the infrastructur
 
 You can either code something and write a test or even use TDD for it.
 
-### Script should be in service - easy to migrate
+## Script should be in service - easy to migrate
 
 Do you write scripts at work? For example, when you have to prepare some data for testing in many microservices?
 Or do some technical stuff, but automatically.
 
 When you work in Spring Framework and decide that script or part of it should be in the service repository, you can copy and reuse it.
 
-### Declarative HTTP client from Spring 6
+## Declarative HTTP client from Spring 6
 
 In previous [post](https://jakubpradzynski.pl/posts/spring-shell-with-declarative-http-client-in-kotlin/) I describe how use Spring Shell with
 declarative HTTP client available since Spring 6.
 
 It makes sending HTTP requests from such a shell script very easy.
 
-### Extended scripts with [Flow](https://docs.spring.io/spring-shell/docs/3.0.0/docs/index.html#using-shell-components-flow)
+## Extended scripts with [Flow](https://docs.spring.io/spring-shell/docs/3.0.0/docs/index.html#using-shell-components-flow)
 
 Do you want to write a script that allows doing something step by step, collecting another user input?
 
