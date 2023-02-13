@@ -2,7 +2,7 @@
 title: Using declarative HTTP client in Spring Shell project with Kotlin
 author: jakubpradzynski
 date: 2023-02-03 14:00:00 +0800
-categories: [IT, Spring]
+categories: [IT, Spring Framework]
 tags: [it, spring shell, declarative http client, kotlin]
 pin: false
 toc: true
