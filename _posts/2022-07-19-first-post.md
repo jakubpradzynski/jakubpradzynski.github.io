@@ -4,7 +4,7 @@ author: jakubpradzynski
 date: 2022-07-19 13:00:00 +0800
 categories: [Blogging]
 tags: [first post]
-pin: true
+pin: false
 toc: true
 ---
 

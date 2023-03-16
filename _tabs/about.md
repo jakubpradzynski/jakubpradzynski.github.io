@@ -12,6 +12,10 @@ On daily basis I use:
 
 Other things I'm interested in are finance and investing.
 
+If any of my posts help you or save you some time, and you would like to thank me for that, you can buy me a coffee:
+
+<a href="https://buycoffee.to/jakubpradzynski" target="_blank"><img src="https://buycoffee.to/btn/buycoffeeto-btn-primary-outline.svg" style="width: 150px" alt="Buy me a coffee on buycoffee.to"></a>
+
 In free time I like to read books.
 
 ###### Currently reading
