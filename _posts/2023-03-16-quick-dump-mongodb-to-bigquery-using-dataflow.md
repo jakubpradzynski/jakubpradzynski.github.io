@@ -4,7 +4,7 @@ author: jakubpradzynski
 date: 2023-03-16 15:00:00 +0800
 categories: [IT, MongoDB]
 tags: [it, mongodb, gcp, bigquery, dataflow]
-pin: false
+pin: true
 toc: true
 ---
 
