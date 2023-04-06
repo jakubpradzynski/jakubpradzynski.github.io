@@ -1,7 +1,7 @@
 ---
 title: Bootstrap project with Spring Boot, Kotest, Testcontainers & MongoDB
 author: jakubpradzynski
-date: 2023-04-06 16:00:00 +0800
+date: 2023-04-06 13:00:00 +0800
 categories: [IT, Spring Framework]
 tags: [it, spring framework, kotest, testcontainers, mongodb]
 pin: false
