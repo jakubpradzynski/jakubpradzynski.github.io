@@ -14,7 +14,7 @@ deploy our application. Additionally, you will learn how to prepare the necessar
 an NGINX proxy to efficiently manage traffic to our application. Finally, we will add access to the application through
 localhost.
 
-# Setting up the Environment
+## Setting up the Environment
 
 Before we begin working on the application, make sure you have the following tools installed:
 
@@ -30,7 +30,7 @@ Ensure that Minikube is correctly installed and running on your local machine.
 minikube start
 ```
 
-# Setting up Kubernetes Dashboard in Minikube
+### Setting up Kubernetes Dashboard in Minikube
 
 Kubernetes Dashboard is a web-based user interface that allows you to manage and monitor your Kubernetes cluster. To use
 the Dashboard, we need to set it up in Minikube and access it through a web browser.
@@ -49,7 +49,7 @@ minikube dashboard
 
 This command will open the Kubernetes Dashboard in your default web browser.
 
-# Generating Micronaut + Kotlin Application
+## Generating Micronaut + Kotlin Application
 
 Micronaut is a lightweight framework for building microservices and applications in languages like Kotlin and Java.
 Let's start by creating the backend part of our application.
@@ -66,7 +66,7 @@ Generate a new Micronaut project with Kotlin:
 mn create-app backend --lang=kotlin
 ```
 
-# Generating ReactTS Application
+## Generating ReactTS Application
 
 Next, we will create the frontend of our application using React with TypeScript.
 
@@ -76,11 +76,11 @@ Generate a new React project with TypeScript:
 npx create-react-app frontend --template typescript
 ```
 
-# Preparing K8S cluster
+## Preparing K8S cluster
 
 With the backend and frontend applications prepared, let's proceed to deploy them on the Minikube Kubernetes cluster.
 
-## Build container images for the backend and frontend applications
+### Build container images for the backend and frontend applications
 
 In the backend directory add `Dockerfile`
 ```dockerfile
@@ -113,7 +113,7 @@ docker build -t my-frontend-image .
 minikube image load my-frontend-image
 ```
 
-## Prepare configuration files for K8S
+### Prepare configuration files for K8S
 
 Sample configuration for the backend (backend-deployment.yaml):
 
@@ -215,7 +215,7 @@ kubectl apply -f backend-deployment.yaml
 kubectl apply -f frontend-deployment.yaml
 ```
 
-## Preparing Files for NGINX Proxy Deployment
+### Preparing Files for NGINX Proxy Deployment
 
 To effectively manage traffic to our backend and frontend applications, we will use an NGINX proxy.
 
@@ -307,7 +307,7 @@ kubectl apply -f nginx-config.yaml
 
 Now you should be able to see all deployments and services in kubernetes dashboard.
 
-# Accessing the Application through Localhost
+## Accessing the Application through Localhost
 
 To access the application through localhost, we need to expose only the NGINX proxy service and configure it to route
 traffic internally within the cluster.
@@ -323,7 +323,7 @@ Now you should be able to access the application through your browser using the 
 Please note that the backend and frontend services are not directly accessible from localhost. The NGINX proxy will
 handle routing traffic internally within the cluster, providing a seamless experience for the users.
 
-# Summary
+## Summary
 
 Congratulations! You have successfully created a simple application consisting of a backend built with Micronaut and
 Kotlin and a frontend using React with TypeScript. Additionally, you have learned how to prepare configuration files for
