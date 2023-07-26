@@ -23,7 +23,7 @@ timezone:
 
 title: Jakub Prądzyński's Blog                          # the main title
 
-tagline: Senior Software Engineer in <a href="https://allegro.pl/">Allegro</a>.</br>Finance and investing hobbyist. # it will display as the sub-title
+tagline: Senior Software Engineer in <a href="https://allegro.pl/">Allegro</a>. Finance and investing hobbyist. # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Tech & Finance Blog
