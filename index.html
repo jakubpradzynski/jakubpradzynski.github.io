@@ -1,4 +1,83 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakub Prądzyński | Engineering Manager, Allegro | Strona w budowie</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Oficjalna strona Jakuba Prądzyńskiego. Engineering Manager, Allegro. Aktualnie pracuję nad nową wersją portfolio. Skontaktuj się ze mną przez social media." />
+    <meta name="keywords" content="Jakub Prądzyński, Engineering Manager, Allegro, Software Engineer, Programista, AI, IT, PrzeglądAI, PrzeglądAI.news" />
+    <meta name="author" content="Jakub Prądzyński" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://jakubpradzynski.pl/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/me.jpg" />
+    <link rel="apple-touch-icon" href="images/me.jpg" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Jakub Prądzyński | Strona w budowie" />
+    <meta property="og:description" content="Aktualnie pracuję nad nową wersją mojego portfolio. Wkrótce pojawi się tutaj coś wyjątkowego." />
+    <meta property="og:url" content="https://jakubpradzynski.pl/" />
+    <meta property="og:image" content="https://jakubpradzynski.pl/images/me.jpg" />
+    <meta property="profile:first_name" content="Jakub" />
+    <meta property="profile:last_name" content="Prądzyński" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jakub Prądzyński | Engineering Manager, Allegro" />
+    <meta name="twitter:description" content="Osobista strona w budowie. Zapraszam do kontaktu." />
+    <meta name="twitter:image" content="https://jakubpradzynski.pl/images/me.jpg" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jakub Prądzyński",
+      "url": "https://jakubpradzynski.pl",
+      "jobTitle": "Engineering Manager, Allegro",
+      "image": "https://jakubpradzynski.pl/images/me.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/jakubpradzynski/",
+        "https://x.com/PradzynskiJakub",
+        "https://www.facebook.com/jakub.pradzynski",
+        "https://www.instagram.com/jakubpradzynski/",
+        "https://github.com/jakubpradzynski"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS (via CDN for simplicity, keeping consistent with design) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a; /* Slate 900 */
+        color: #f8fafc; /* Slate 50 */
+        overflow: hidden; /* Prevent scrollbars during animations */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
