@@ -1,7 +1,9 @@
 {
-  "name": "jakub-pradzynski-placeholder",
+  "name": "jakubpradzynski.pl",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://jakubpradzynski.github.io",
+  "base": "/",
   "type": "module",
   "scripts": {
     "dev": "vite",
